@@ -1,4 +1,65 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+  background-color: $back-color;
+  .container {
+    position: relative;
+    padding: 25px 42px;
+    .hamburger {
+      input:checked ~ .checked {
+        transform: translateY(90%);
+      }
+
+      .hamburger-tagger {
+        i {
+          font-size: 18px;
+        }
+      }
+      ul {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        line-height: 2rem;
+        background-color: $Tertiary-color;
+        transition: all 0.5s ease;
+        li {
+          &:hover {
+            background-color: $four-color;
+          }
+        }
+      }
+    }
+    .navbar-brand {
+      margin: 0;
+      .logo-img {
+        margin-right: 8px;
+      }
+      .logo {
+        width: 171px;
+        height: auto;
+        @media screen and (max-width: 375px) {
+          width: 114px;
+          height: auto;
+        }
+      }
+    }
+    a {
+      display: flex;
+    }
+    div {
+      ul {
+        display: flex;
+        margin-right: 80px;
+        li {
+          padding-left: 60px;
+        }
+      }
+      > a {
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  }
 }
