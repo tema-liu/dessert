@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>付款</title>
+    <script type="module" crossorigin src="/dessert/assets/main-7c532171.js"></script>
+    <link rel="stylesheet" href="/dessert/assets/main-e8d5fca1.css">
+  </head>
+  <body>
+    <header class="navbar">
+  <div class="container flex-nowrap">
+    <div class="hamburger d-md-none d-lg-none">
+      <input class="d-none" type="checkbox" id="switch" /><!--選單開關-->
+      <label for="switch"
+        ><!--漢堡按鈕圖示-->
+        <div class="hamburger-tagger d-inline-block d-md-none">
+          <i class="fa-sharp fa-solid fa-bars" style="color: #3f5d45"></i>
+        </div>
+      </label>
+      <ul class="d-block d-md-none d-lg-none checked bg-success">
+        <li>
+          <a href="http://localhost:5173/dessert/pages/index.html">首頁</a>
+        </li>
+        <li>
+          <a href="http://localhost:5173/dessert/pages/product.html">甜點</a>
+        </li>
+        <li>
+          <a href="http://localhost:5173/dessert/pages/login.html">登入</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 導覽頁右邊區域 -->
+    <a
+      class="navbar-brand"
+      href="http://localhost:5173/dessert/pages/index.html"
+    >
+      <img
+        src="/dessert/assets/logo-dark-8abe5512.svg"
+        alt=""
+        class="logo-img d-none d-md-inline-block d-lg-inline-block align-text-top"
+        width="40px"
+        height="40px"
+      />
+      <img
+        src="/dessert/assets/logotype-lg-dark-b580da93.svg"
+        alt=""
+        class="logo d-inline-block align-text-top"
+      />
+    </a>
+    <div class="d-flex flex-nowrap">
+      <ul class="manu d-none d-md-flex d-lg-flex flex-nowrap">
+        <li>
+          <a href="http://localhost:5173/dessert/pages/index.html">首頁</a>
+        </li>
+        <li>
+          <a href="http://localhost:5173/dessert/pages/product.html">甜點</a>
+        </li>
+        <li>
+          <a href="http://localhost:5173/dessert/pages/login.html">登入</a>
+        </li>
+      </ul>
+      <a href="http://localhost:5173/dessert/pages/checkout1.html"
+        ><i class="fa-solid fa-cart-shopping"></i
+      ></a>
+    </div>
+  </div>
+</header>
+    <section class="sec-checkout">
+      <div class="container-780 mb-md-7 mt-md-6">
+        <div class="row g-0 g-md-4">
+          <!-- 左邊區塊 -->
+
+          <div class="col-12 col-md-8">
+            <div class="checkout-card bg-primary">
+              <div class="row d-flex align-items-center mb-6">
+                <div class="col-6">
+                  <h2 class="fs-5 text-white">付款</h2>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex steps">
+                    <div class="circle bg-white">
+                      <img
+                        class="w-100"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAphJREFUeF7t21FOwkAQxvHZcBFuIjyQeAki3kRPIpFLGHmw3ISLELSEmsaUunRn99ud/XguTPj/mDZWcMIHtICDTudwIQD4Q0AAAoALgMdzAwgALgAezw0gALgAeDw3gADgAuDx3AACgAuAx3MDCAAuAB7PDSAAuAB4PDeAAOAC4PHcAAKAC4DHcwMIAC4AHs8NIAC4gOf4h/Xqyzl3aN4/Xzyf4nUYN8AjUxtfRBbtoc65V00EAvwD0I/fHaqJQIARgKH42ggEuAEwFl8TgQADAD7xfxFEnpvdfutxKRk8hAB/stwT/+fC3Bx2++XU+JeLesiTrT03dXwC9D5BiPgEuAKg4hNARJDxqwdAx68aIIf41QLkEr9KgJziVweQW/yqAHKMXw1ArvGrAMg5fhSAxeZx3r5ws/04ou8V5R5fHaCNfz6d3kRk7mazJRKhhPiqAL34l/+disgRhVBKfDWAgfjd2Sc5QknxVQBG4idHKC1+MIBH/GQIJcYPB1ivNmeR9qLr84h2Oio1fjBA+wILMELJ8VUAkAilx1cDQCBYiK8KkBLBSnx1gBQIluJHAYiJYC1+NIAYCBbjRwXQRLAaPzqABoLl+EkAQhCsx08GMAWhvZ3d/SzI4z5H8LeUPWZEOSTpt6PvvG3h+4aLjZ90A7qayghFx4cATDgd3dqE4uPDABQQTMSHAgQgmIkPB5iAYCp+FgB3IJiLnw2AB4LJ+FkBjCCYjZ8dwACC6fhZAvQQnkJ/BO37pzTyuKS3IpBvNNfZBADLEIAA4ALg8dwAAoALgMdzAwgALgAezw0gALgAeDw3gADgAuDx3AACgAuAx3MDCAAuAB7PDSAAuAB4PDeAAOAC4PHcAAKAC4DHcwMIAC4AHv8Nl0t6cA2TJc4AAAAASUVORK5CYII="
+                        alt="check-img"
+                      />
+                    </div>
+                    <div class="circle circle-circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 信用卡卡號 -->
+              <label class="text-white" for="credit">信用卡卡號</label>
+              <div class="mb-3 position-relative">
+                <input
+                  class="w-100 border-0 e"
+                  type="text"
+                  name="credit"
+                  id="credit"
+                  placeholder="9012-3456-7890-1234"
+                />
+                <img
+                  class="credit-img"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAArxJREFUeF7tnFFO21AQRefBRmAlCR+puolUyUoKK2moWURVI9VeCdlIeJWDIpWfvGdf6CXkICEh1dcTn5N5Q0U0KfiyEkjW6hQPBJjfBAhAgJmAuTwdgAAzAXN5OgABZgLm8nQAAswEzOXpAASYCZjL0wEIMBMwl6cDTk3AfPX1Kp6fVznnWUTMza//I5TfRsT+O11e3nWbX8PP1V+jOmD+7cttzvl79d3P78JtSum++/n7tvbRqwXMlos/vONrsUbXN+1NzdVVAubLxSpH/Ki5Ide8EEgp3dV0QlHAcObn3e4JsKMJbFPO6+7hsTuWLAvg3B9N/hCo6YKigNlyMRw9q8mv4ryDxVlQI2A4fq7Om+Pkp9/2TXstHUGz5SIfu0HftEWJk1/+CQRVPkV4aoETYCi9RJUPAiT8EQgQAapxBKgExTwCRIBqHAEqQTGPABGgGrcLUB/gs+dL/0+Sfw397ADV50OASlDMI0AEqMYRoBIU8wgQAapxBKgExTwCRIBqHAEqQTGPABGgGkeASlDMI0AEqMYRoBIU8wgQAapxBKgExTwCRIBq/N0FlAqoD/DR8/Y/yCBA++Ca/AcZBCDAekpxBFnx88k4M34EIIAhzBC2dgFD2IqfGWDGjwAEMIQZwtYuYAhb8TMDzPgRgACGMEPY2gUMYSt+ZoAZPwIQwBBmCFu74H8MYRY2CYpLJ0TNx1JYVzldwKZv2vWxeFEAy1qn03+TpX2srRQE5Hwjr60cyrO4dbyEFLHumnZTShaPoMMNWF9ZQvnq34vrKg9XVwvYdwJLXIsWas79f28ySsBewssq42GD+rBLlPX1h9X1KfVxcbF51/X1Rf1cMJrA6A4YXYHAUQIIML9BEIAAMwFzeToAAWYC5vJ0AALMBMzl6QAEmAmYy9MBCDATMJenAxBgJmAuTweYBfwFKau3cPG/h14AAAAASUVORK5CYII="
+                  alt="credit-img"
+                />
+              </div>
+
+              <div>
+                <label class="text-white" for="Last Name">持卡人姓名</label>
+              </div>
+              <div class="row d-flex align-items-center g-2 mb-3">
+                <div class="col-6">
+                  <input
+                    class="w-100 border-0"
+                    type="text"
+                    name="Last Name"
+                    id="Last Name"
+                    placeholder="劉"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    class="w-100 border-0"
+                    type="text"
+                    name="First Name"
+                    id="First Name"
+                    placeholder="貼麻"
+                  />
+                </div>
+              </div>
+              <!-- 地有效期限 -->
+              <div>
+                <label class="text-white" for="choose-city">有效期限</label>
+              </div>
+              <div class="row d-flex align-items-center g-2">
+                <div class="col-6 mb-3">
+                  <select class="w-100">
+                    <option
+                      class="w-100"
+                      value="
+                      date"
+                      disabled
+                    >
+                      月
+                    </option>
+                    <option
+                      value="
+                      exp-date"
+                    >
+                      1
+                    </option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3">
+                  <select class="w-100">
+                    <option
+                      value="
+                      date"
+                      disabled
+                    >
+                      年
+                    </option>
+                    <option
+                      value="
+                     year"
+                    >
+                      2014
+                    </option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label class="text-white" for="last-number">背面末三碼</label>
+                  <input
+                    class="w-100 border-0"
+                    type="text"
+                    name="last-number"
+                    id="last-number"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="pramary-btn fs-3 fw-bold py-3">
+              <a
+                class=""
+                href="http://localhost:5173/dessert/pages/checkout3.html"
+                >下一步</a
+              >
+            </button>
+          </div>
+
+          <!-- 右邊區塊 -->
+          <div class="col-4 pe-0 d-none d-md-block">
+            <div
+              class="cart-total d-flex flex-column align-items-center border border-susses"
+            >
+              <div class="w-100 d-flex justify-content-center">
+                <h2 class="fs-3">訂單摘要</h2>
+              </div>
+              <div class="fw-light w-100 d-flex justify-content-between">
+                <p>小計</p>
+                <p>NT$ 2,700</p>
+              </div>
+              <div class="fw-light w-100 d-flex justify-content-between">
+                <p>運費</p>
+                <p>NT$ 300</p>
+              </div>
+              <div class="fs-2 w-100 d-flex justify-content-between">
+                <p>總計</p>
+                <p>NT$ 3,000</p>
+              </div>
+            </div>
+
+            <div
+              class="cart-total d-flex flex-column border border-susses mt-8"
+            >
+              <div class="w-100 d-flex justify-content-center">
+                <h2 class="fs-3">訂單摘要</h2>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="checkout-img">
+                  <img src="https://bit.ly/2QvsT63" alt="草莓麥片" />
+                </div>
+                <div class="pt-0 d-flex flex-column justify-content-center">
+                  <h3 class="fs-1 fw-light">焦糖馬卡龍(2)</h3>
+                  <h3 class="fs-2">NT$ 900</h3>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pt-3">
+                <div class="checkout-img">
+                  <img src="https://bit.ly/2zBDAxX" alt="草莓麥片" />
+                </div>
+                <div class="pt-0 d-flex flex-column justify-content-center">
+                  <h3 class="fs-1 fw-light">焦糖馬卡龍(2)</h3>
+                  <h3 class="fs-2">NT$ 900</h3>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="checkout-img">
+                  <img src="https://bit.ly/2zKOP7w" alt="草莓麥片" />
+                </div>
+                <div class="pt-0 d-flex flex-column justify-content-center">
+                  <h3 class="fs-1 fw-light">焦糖馬卡龍(2)</h3>
+                  <h3 class="fs-2">NT$ 900</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+  <div class="footer-top d-flex justify-content-center">
+    <div
+      class="container-1062 d-flex align-items-center justify-content-center justify-content-md-center flex-wrap"
+    >
+      <div class="footer-top-left d-flex align-items-center">
+        <img src="data:image/png;base64,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" alt="logo" />
+        <h2 class="fs-3 fw-normal text-white">訂閱你我的甜蜜郵件</h2>
+      </div>
+      <div class="footer-top-right d-flex align-items-center">
+        <label for="email"
+          ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA9ZJREFUeF7tnGFy2jAQhaVwkeQkODOl00OUDpykyUlKSw/RKZ2pOUnpQYwaASYOBXbXBj/ZPP4x2F7pfXq7kgB5xxdUAQ+NzuCOAMCDgAAIAKwAODwdQABgBcDh6QACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDugagGzy4d6t15MQwtA5l4Hbn0L41YsOuff+r7u7m+WzH/G9+mVyQPbp/VMI4bP66bd34cp7/zX/9vNJ23U1gOF49JsjXiury5fzxaPmahWAbDyaBOe+aB7Ia7YKeO+fNU4QAcScH4riD4U1K7Dyg8GjVBNkABz9ZuXLGzQuEAEMx6OYeia1W3HbN4q1QAMgpp/729axdu9Xy/ni4dzdGgBBeMA0OBenprcGaeVDmAbv4+zw5Gs5X5zVuDGAGKCyOLuJNUI1tw/Ho7MDtBUAJf7djCnWjL6ukDejPv/+Ky/7nBSA2Ki+uuHUjCY5AFU37PaMup6Wzs5kkgWwB7FdR3SxSP+Xbo5V2uQBdDEtaRZQydaAc1OyDhRp1aiv9hHugJf5/8wPBs/SnkfqtcEy6ktXh6IQZ3xXn4buhDXvgyc0WxK3Cw5dbflepC0AZRvNFt5tdSOKtL2t251hcdRXgbUNIMZO3g3WdLNJOTW/DUQAeHWD8eu5Foq0fdR/fJdJ+z3QvSDFPmESRdo66i81GJAOqLJBpqWrFllpAKYCAFGk7emmRpHtGoBWirQ13TQpsl0EcM0ibR/1DYtslwGUbb9IkbaO+ksV2T4AaJqWhtofQe23Q2rO6SWxj32eWhGW+mBOIdIDq5+3NerRK2GLJseuNU9ZNQHrrmQ1z059IVa3DxcBkV25yEqd61oKOtYfU5He5/krzOklsftQA0710eQGVLrpMwDVShpRZCVX9CEFHfbxqBtSGvVdnwVJg+rNStqt13mT7WJtsLrX9dEBdbWA3EcAENlfgxIAAYAVAIenAwgArAA4PB1AAGAFwOHpAAIAKwAOTwcQAFgBcHg6gADACoDD0wEEAFYAHJ4OIACwAuDwdAABgBUAh7+EA3hgUwOIlwDA4yrrA5gt54vpudvFA5tS/b1NfU3au1PznwUZAI+trE3MDwYP0hEOIoAYnQe32hl456b5fDGT7lQBiA/h8ZWSlG8+V/81Vg1g44QW/9pj6m5CF2vyfrW5JgAbCPH4+qLIgnPl8fW3dlzlIe54XH38wfDy6sfXJzTQetMUswN60/NEOkIAYBAEQABgBcDh6QACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDiAAsALg8HQAGMA/BfvFfynn72QAAAAASUVORK5CYII=" alt="email"
+        /></label>
+        <input type="email" name="email" id="email" />
+        <button>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAl5JREFUeF7t3MFNw0AQheHdTujEvhjRhFGohFAJCLqAAykFCokWLZKlCEWJ8a705s28nGNP8n+e+GIlJ72gBTJ0uoYnAYAvAgEIAFwAPF4bIABwAfB4bYAAwAXA47UBAgAXAI/XBggAXAA8XhsgAHAB8HhtgAC2Fxjm6Tnn/H14fd9vPwv2SNoNqPFTSruaL+f8xIpACXAaf7l+WRHoAM7FZ0agArgUnxWBBmC8v92XUh7X3DKZfo54AHZ3N+V4rDfe0RMCDUCNPjpEoALwiEAH4A2BEsATAi2AFwRqAA8I9ADsCC4AmBHcALAiuAJgRHAHwIbgEoAJwS0AC4JrAAYE9wDWEUIAWEYIA2AVIRSARYRwANYQQgJYQggLYAWhGWCYp7LmKQUv7+n9yIsANlwZPREEsAGg5wPBAtgI0AtBAC0AKT0c3j5eGk7R/nc10W7CS+zcIf7vFrXo1WMjAvSKL4ANV1/P+F0ANnwHU4cM8/S5+onrTj87pwGaf4JM1fznh0HHD70BFuKHBbASPySApfjhAKzFDwVgMX4YAKvxQwBYju8ewHp81wAM8d0CsMR3CcAU3x0AW3xXAIzx3QCwxncBwByfHoA9PjWAh/i0AF7iUwJ4ik8H4C0+FcA4T7uSUv3PuKuv3o+OXB3Y8AaqpyLW/HMiU3yqDVgusksIbPEpAeqHPofAGJ8W4C8Ca3xqgAUhlfLV+oh4wz20+VCqm3DztzV4AgGAUQQgAHAB8HhtgADABcDjtQECABcAj9cGCABcADxeGyAAcAHweG2AAMAFwOO1AQIAFwCP/wFj3ZRwVm4vywAAAABJRU5ErkJggg==" alt="發送" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main bg-success d-flex justify-content-center">
+    <div class="container-1062 d-flex justify-content-between">
+      <div class="footer-main-left">
+        <img src="/dessert/assets/logotype-lg-dark-b580da93.svg" alt="logo" />
+        <p class="fw-normal lh-base">
+          07-1234-5678 <br />
+          sweetaste@email.com 800 <br />
+          高雄市新興區幸福路 520 號
+        </p>
+      </div>
+
+      <div class="footer-main-right d-none d-sm-block">
+        <img
+          src="/dessert/assets/sm-今天是個吃甜點的好日子-1498178d.svg"
+          alt="今天是個吃甜點的好日子"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom bg-success d-flex justify-content-center">
+    <div
+      class="container-1062 d-flex align-items-center justify-content-between flex-wrap"
+    >
+      <div class="footer-bottom-img d-flex">
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABVlJREFUWAm9V31sVEUQn9m7q2CIAhJFy/cfRBAFAwYh7fVsr0WJBCVihfaKYvRf0RhijBITgfiPmBiMMUYgbakkRSMxWKW9cv2ARqCKNBWNCkJoIbF8SBTo3b0df/vad/e4vuuBgptcd2Z29jfzZmZnt0yuEVoRGqf9gTdZZBUx3+5a+o+kXADAISI+yMnEptinsT4HkB2iKFK2REi2QTDWkd2MWYjOiejn22qjXxh8n/lTWBVeCsO78Btp+Js5jA1mfmbKA9NOnjhy7DCHng2NlqT/F4R83M00nIktQnEhNcUvVmAtMf2vxo0zzJRHYr3iR05KEJbrGyI/C1M3YI4TiUnjJGDMB59/PUBIxeN+EroXEcg5ROQy9DZYCd66b0dT75ANy5f7giMuLIJ8LeCKhqx7CUQmcFGkFEHIOTrjbC3tqG7uyakJhWBl+GmE+CNEZHQu/dwOCO3s6++t6K7vjjtgBVUl032ayoV4tpEJc7fSdPivi+e+6fyy85KRLVxZPNnvUw1MPMPw2cawDqAvdPT2BR75taGh3wAEI2VT0aTeRSqe9AJEZZ/WpFe310a/Nus4YePF8n+PSIz30jcylW0BxhNJS69wjCNVy0l0dzbjBgdhv1ux2h2sKFll+Ni22BmxdLmhs42sDrDQ5v11zSfMxmAkjDBKNap2JIqxV7Ssj19Rd7TUNDJ+SrM8kSC+y/AAnE9KbSmsKC0xe1vrmlvxMbsM7TX8XkIjY83V6TX+EPQIONGTUHp+RjFKW3VTykDcsv4I+HwIhLyDPQ8ZDM202Se01NCZI0sEpCdW13jYKIciZbPMscKXi7b0Msd4YUXJzMJIeE2oIvxwJugAz/MKVpbNNXT75TF7SeRPLz1PB1BMPznKQrp0kG5vq2s+YOhgVXglK9WliN8TxR1I0RuOvntWPv2ozdfXWzjrR9xrDu3pAI7OaUcBR22KoREFXKcDg4VfB+/eu47euop3NO9M7SE+5dDu2Q3iltu3pC0QsetEE8pycCAbsO8aQkkXlyZFUvgoRJ1eSFMphbTINBa6J8Uz2dHAEbPzOSCXjfAmDci0ERFI84ObgfObg4OopqLhyMzs6QCazRxCbzcK2lINZkYRBQsiZbhwcLRqo9tF6/tRK2tYy4LWmqb1Rm5GHmtrgLL7QssgDfu00JG75+yd0NLFLXXRvUa5KBI+CLh5uLhOsSQWxLbHPPPpAKNpbUWEzrbWNL5q768sKSRWrc66e7bz6xY4tPj4JdC2A1rza+gwe5CGCUKBDhzBl5PxS7s7aEI8mHd+JtbCiNColtro22Y/GtJzDo49M6+7incx2SMAJa2poG174z6jb7dXdLiM6k9BmT6BTlkO4/WOMBQK+a2JgQ3I81pHljkP6wASf4Z9yQdNTzcbiyqKHxP2fWJ6fiaQw6PaP0equpD0fBThIjg80VnzmnM4ABdIjqpEcnFsR+x3AzB3ydxbR902dpFWNAdfNgPrCRg5hPsgqiwqwD3wgZehbLKcDpiNqPbzMPRCW23TZ9mAjHxBVXF+nviGLdDM/eYY/p0pzOQR8jGKeWewsrQlGCldTJ5dj+iWuA6g+u0HSSaGF48Pu8jo4z8iX8O+WoZulh4Y+hb5OYbz7UcKZoGfDpxJQ3WHk8ghHEP+CirX6QDnw+gyc0E4w0U6opyzFt5jHhPvIxSp917OXTdKQaSvX+lNqr266STuiRdvFO4147BafaA6etbu9ye6jv8wefa0LqSjFKEcec0g/0IRtXIO56oSbdp+RaWuXfyjeHTqfZO2kPLhMpF+9LUxqP4b54x5ETF9fIXlqf010e8c3/8BlV35S5OKocMAAAAASUVORK5CYII=" alt="line" /></a>
+        <a href="#"
+          ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAcNJREFUWAnFlr1OAkEQx2dOUPE7FnYW+gaKFlhgBW9AeZHK2sInsLGw8Q1MjNpcqY0xJkdFRUNlI43GAmK0QEWBG2eMR44LH4fu3U5Cdm/2sv/fzfzvWNw2MycAkOdfpEEADhEcx1g1H6nyrxgCGICwZ+gQ92pqB5AWhBLc4xoQ3QGiw6OBiOssNO0XUwxA9wR0aDjt68K5/egXS5uZZ+79ojevDICFL4yH1k7BtltegWFzJQBc7uorGLvlEcUFTgkA9/iofHbzNuxpe62rATDg1r/5lpldipOzz+/6GgHGZR2J5tiUXbcqAfhs0lPXrnwRI+eKxTYl35H0icuaku9AotXuLn8uN8av3Y+4iAwKJQB+gWSjMuHP9bsOBaCfWK+8doA/mfCrUZ8qWsWPXk8kudJl6Z2HjvcklzazKwhUkbk3IqsAi294hd15ZAAOgF4A7odmAKKkW3bviHwm5P+S/wU2mrO2ZdfdXVK5VGJ8ckaMODDkXBiKB2r1BW55sAgFYH65qheg9LKqFwAsSzMAQGBjh+IBsZ84PIgNQwPg049eAD6G6QVADFgBPs83g/Rq1HuCVEDaJB44CAMiiAcI4fQbsYeENTHnlOYAAAAASUVORK5CYII=" alt="facebook"
+        /></a>
+      </div>
+      <p class="fw-normal">© 2018 Sweetaste* All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+    
+  </body>
+</html>
