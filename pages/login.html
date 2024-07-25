@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>會員登入</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="d-flex section-login justify-content-center">
+      <div class="container-780 login d-flex align-items-center">
+        <!-- 會員登入左 -->
+        <div class="bg-primary">
+          <h1
+            class="fs-4 py40-30 px-30 text-white d-flex justify-content-center"
+          >
+            會員登入
+          </h1>
+          <div class="bg-success px-30 d-flex d-md-none login-bottom">
+            <ul class="d-flex">
+              <li class="bg-white">
+                <a href="#"
+                  ><img
+                    class="w-100"
+                    src="/assets/images/ic-facebook-logotype.png"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li class="bg-white">
+                <a href="#"
+                  ><img
+                    class="w-100"
+                    src="/assets/images/ic-google.png"
+                    alt="google"
+                /></a>
+              </li>
+              <li class="bg-white">
+                <a href="#"
+                  ><img
+                    class="w-100"
+                    src="/assets/images/ic-yahoo.png"
+                    alt="yahoo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-30 pt-md-0">
+            <div class="d-flex pb-16">
+              <label class="p-16-20 bg-success" for="email"
+                ><img
+                  class="w-24"
+                  src="/assets/images/user-solid.svg"
+                  alt="user"
+                />
+              </label>
+              <input
+                class="text-secondary bg-success border-0 outline-none"
+                type="email"
+                name="email"
+                id="email"
+                value="電子信箱/手機號碼"
+              />
+            </div>
+            <div class="d-flex pb-16">
+              <label class="p-16-20 bg-success" for="password"
+                ><img
+                  class="w-24"
+                  for="password"
+                  src="/assets/images/vpn_key_24dp_3F5D45_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="鑰匙"
+                />
+              </label>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                value="請輸入使用者密碼"
+                class="text-secondary bg-success border-0 outline-none"
+              />
+            </div>
+            <input type="checkbox" class="checkbox-16" />
+            <p class="d-inline-block text-white">記住我</p>
+          </div>
+
+          <!-- 登入帳號按鈕 -->
+          <button type="button" class="btn btn-warning py-16 w-100">
+            <h2 class="fs-3 text-primary fw-bold">登入帳號</h2>
+          </button>
+        </div>
+
+        <!-- 社群帳號右 -->
+        <div class="bg-success px-30 d-none d-md-flex login-right">
+          <h2 class="text-secondary fs-3 fw-light">—— 連結社群帳號 ——</h2>
+          <ul>
+            <li class="bg-white w-100">
+              <a href="#"
+                ><img
+                  src="/assets/images/ic-facebook-logotype.png"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li class="bg-white w-100">
+              <a href="#"
+                ><img src="/assets/images/ic-google.png" alt="google"
+              /></a>
+            </li>
+            <li class="bg-white w-100">
+              <a href="#"
+                ><img src="/assets/images/ic-yahoo.png" alt="yahoo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

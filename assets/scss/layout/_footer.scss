@@ -1,0 +1,119 @@
+.container-1062 {
+  max-width: 840px;
+  width: 840px;
+}
+.footer {
+  .footer-top {
+    padding: 30px 42px;
+    background-color: $primary;
+    .footer-top-left {
+      margin-right: 124px;
+      img {
+        margin-right: 20px;
+      }
+    }
+    .footer-top-right {
+      label {
+        background-color: $success;
+        padding: 16px 20px;
+        img {
+          vertical-align: middle;
+          width: 24px;
+        }
+      }
+      input {
+        padding-top: 16.4px;
+        padding-bottom: 16.4px;
+        padding-left: 10px;
+        outline: none;
+        border: 0;
+        width: 252px;
+      }
+      button {
+        border: 0;
+        padding: 16px 20px;
+        background-color: $four-color;
+        img {
+          vertical-align: middle;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .footer-main {
+    .container-1062 {
+      padding: 30px 30px;
+      .footer-main-left {
+        img {
+          width: 171px;
+          height: auto;
+          padding-bottom: 115.5px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      .footer-main-right {
+        img {
+          width: 59.28px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    .container-1062 {
+      padding: 0px 30px;
+      padding-bottom: 30px;
+      a + a {
+        margin-left: 8px;
+      }
+      p {
+        margin: 0;
+        line-height: normal;
+      }
+    }
+  }
+}
+//footer斷點
+@media screen and (max-width: 985px) {
+  .container-1062 {
+    padding: 0 30px;
+  }
+  .footer {
+    .footer-top {
+      .container-1062 {
+        div:first-child {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+        .footer-top-right {
+          input {
+            width: 187px;
+          }
+        }
+      }
+    }
+    .footer-main {
+      .container-1062 {
+        padding: 38px;
+        .footer-main-left {
+          img {
+            padding-bottom: 40px;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      .container-1062 {
+        p {
+          padding-top: 23px;
+        }
+      }
+    }
+  }
+}

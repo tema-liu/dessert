@@ -1,0 +1,63 @@
+// Default variable overrides
+// $body-bg: #000;
+// $body-color: #111;
+
+$primary: #3f5d45;
+$secondary: #8da291;
+$success: #eaf0ed;
+$warning: #ffe180;
+// $primery-color: #3f5d45;
+// $Secondary-color: #8da291;
+
+// $font-size-"b"ase: 1rem;
+// $h1-font-size: $font-size-base;
+$font-sizes: (
+  "1": 1rem,
+  //16px
+  "2": 1.25rem,
+  //20px
+  "3": 1.5rem,
+  //24px
+  "4": 2rem,
+  //32px
+  "5": 2.25rem,
+  "6": 14rem,
+);
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  //4
+  2: $spacer * 0.5,
+  //8
+  3: $spacer,
+  4: $spacer * 1.5,
+  //24
+  5: $spacer * 3,
+  //48
+  6: $spacer * 1.875,
+  //30
+  7: $spacer * 3.75,
+  //60
+  8: $spacer * 1.25,
+  //20
+) !default;
+
+//自己設定的參數
+$Tertiary-color: #eaf0ed;
+$four-color: #ffe180;
+$back-color: white;
+
+//請用在sec-1 container內部
+.bg-img-home {
+  background-image: url("https://bit.ly/2OhbMHr");
+}
+
+.bg-img-product {
+  background-image: url("https://bit.ly/2Qodh3Z");
+}
+
+.bg-img-checkout {
+  background-image: url("https://bit.ly/2P7GhNd");
+}

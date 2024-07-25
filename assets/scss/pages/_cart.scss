@@ -1,0 +1,163 @@
+h3 {
+  margin: 0;
+}
+
+.cart-sec {
+  .row {
+    .col-md-8 {
+      margin-bottom: 39px;
+      max-width: 682px;
+
+      padding-right: 0;
+      padding-left: 0;
+
+      .container {
+        padding-right: 0px;
+        //您的購物車
+        h2 {
+          padding: 20px 0;
+          margin-bottom: 13px;
+        }
+        //中隔線
+        > div + div {
+          border-top: 1px solid $success;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .container:last-child {
+          padding-right: 42px;
+        }
+      }
+    }
+
+    .col-md-4 {
+      max-width: 324px;
+      padding-right: 12px;
+      .cart-total {
+        background-color: $primary;
+        color: white;
+        h2 {
+          padding: 16px 0;
+        }
+        div + div {
+          padding-top: 16px;
+        }
+        div {
+          padding: 0 16px;
+
+          &:nth-of-type(3) {
+            padding-top: 8px;
+          }
+          &:last-child {
+            padding-bottom: 16px;
+          }
+        }
+      }
+      button {
+        padding: 16px 0;
+      }
+      @media screen and (max-width: 768px) {
+        max-width: none;
+        padding: 0px;
+        .cart-total {
+          padding: 0 30px;
+          background-color: $white;
+          color: $primary;
+          div {
+            &:first-child {
+              background-color: $success;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//購物車卡片
+.cart-card {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  gap: 38px;
+
+  > div {
+    gap: 38px;
+    > div {
+      gap: 38px;
+    }
+  }
+  div {
+    display: flex;
+    .cart-card-img {
+      width: 110px;
+      height: 110px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    div {
+      .cart-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+      }
+      .cart-card-number {
+        display: flex;
+        align-items: center;
+
+        div {
+          border: 1px solid $success;
+          padding: 13px 19px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    padding: 30px 0 0 0;
+    gap: 0px;
+    > h3 {
+      padding-bottom: 8px;
+      margin-left: auto;
+    }
+    > div {
+      border-bottom: 1px solid $success;
+      padding-bottom: 8px;
+      gap: 16px;
+      > div {
+        gap: 20px;
+      }
+    }
+    div {
+      .cart-card-img {
+        min-width: 130px;
+        height: 106px;
+      }
+      div {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+//主要按鈕
+.pramary-btn {
+  width: 100%;
+  border: 0;
+  color: $primary;
+  background-color: $warning;
+  &:active {
+    background-color: #e2c154;
+  }
+}
+
+.container768-px0 {
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+}

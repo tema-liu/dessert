@@ -1,0 +1,55 @@
+.p-20 {
+  padding: 20px 0;
+}
+
+.py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (max-width: 376px) {
+    padding: 0;
+  }
+}
+.mx-375-px30 {
+  @media screen and (max-width: 376px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.pro-banner-img {
+  margin-top: 40px;
+  width: 89px;
+  height: auto;
+}
+
+.arrow {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.pro-tabs {
+  li {
+    padding: 22px 25.356px;
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: $success;
+    }
+  }
+  li:first-child {
+    padding: 18px;
+  }
+  li:last-child {
+    padding: 18px;
+  }
+  li + li {
+    border: 1px solid $success;
+  }
+}
+
+.py60-30 {
+  padding-bottom: 60px;
+  @media screen and (max-width: 376px) {
+    padding-bottom: 30px;
+  }
+}

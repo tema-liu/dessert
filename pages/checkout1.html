@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>運送</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="sec-checkout">
+      <div class="container-780 mb-md-7 mt-md-6">
+        <div class="row g-0 g-md-4">
+          <!-- 左邊區塊 -->
+
+          <div class="col-12 col-md-8">
+            <div class="checkout-card bg-primary">
+              <div class="row d-flex align-items-center mb-6">
+                <div class="col-6">
+                  <h2 class="fs-5 text-white">運送</h2>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex steps">
+                    <div class="circle circle-circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center g-2 mb-3">
+                <div class="col-6">
+                  <label class="text-white" for="Last Name">姓氏</label>
+                  <input
+                    class="w-100 border-0"
+                    type="text"
+                    name="Last Name"
+                    id="Last Name"
+                    placeholder="劉"
+                  />
+                </div>
+                <div class="col-6">
+                  <label class="text-white" for="Last Name">名字</label>
+                  <input
+                    class="w-100 border-0"
+                    type="text"
+                    name="First Name"
+                    id="First Name"
+                    placeholder="貼麻"
+                  />
+                </div>
+              </div>
+              <!-- 電話 -->
+              <div class="mb-3">
+                <label class="text-white" for="phone">電話</label><br />
+                <input
+                  class="w-100 border-0"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="0988-345-123"
+                />
+              </div>
+              <!-- 地址 -->
+              <div>
+                <label class="text-white" for="choose-city">地址</label>
+              </div>
+              <div class="row d-flex align-items-center g-2">
+                <div class="col-6">
+                  <select class="w-100">
+                    <option
+                      class="w-100"
+                      value="
+                      choose-city"
+                      disabled
+                    >
+                      請選擇縣市
+                    </option>
+                    <option
+                      value="
+                      kaohsiung"
+                    >
+                      高雄市
+                    </option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <select class="w-100">
+                    <option
+                      value="
+                      choose-county"
+                      disabled
+                    >
+                      請選擇區域
+                    </option>
+                    <option
+                      value="
+                     shinshin"
+                    >
+                      新興區
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <input
+                    class="w-100 border-0"
+                    type="text"
+                    name="phone"
+                    id="choose-city"
+                    placeholder="幸福路520號"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="pramary-btn fs-3 fw-bold py-3">
+              <a href="/dessert/pages/checkout2.html">下一步</a>
+            </button>
+          </div>
+
+          <!-- 右邊區塊 -->
+          <div class="col-4 pe-0 d-none d-md-block">
+            <div
+              class="cart-total d-flex flex-column align-items-center border border-susses"
+            >
+              <div class="w-100 d-flex justify-content-center">
+                <h2 class="fs-3">訂單摘要</h2>
+              </div>
+              <div class="fw-light w-100 d-flex justify-content-between">
+                <p>小計</p>
+                <p>NT$ 2,700</p>
+              </div>
+              <div class="fw-light w-100 d-flex justify-content-between">
+                <p>運費</p>
+                <p>NT$ 300</p>
+              </div>
+              <div class="fs-2 w-100 d-flex justify-content-between">
+                <p>總計</p>
+                <p>NT$ 3,000</p>
+              </div>
+            </div>
+
+            <div
+              class="cart-total d-flex flex-column border border-susses mt-8"
+            >
+              <div class="w-100 d-flex justify-content-center">
+                <h2 class="fs-3">訂單摘要</h2>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="checkout-img">
+                  <img src="https://bit.ly/2QvsT63" alt="草莓麥片" />
+                </div>
+                <div class="pt-0 d-flex flex-column justify-content-center">
+                  <h3 class="fs-1 fw-light">焦糖馬卡龍(2)</h3>
+                  <h3 class="fs-2">NT$ 900</h3>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pt-3">
+                <div class="checkout-img">
+                  <img src="https://bit.ly/2zBDAxX" alt="草莓麥片" />
+                </div>
+                <div class="pt-0 d-flex flex-column justify-content-center">
+                  <h3 class="fs-1 fw-light">焦糖馬卡龍(2)</h3>
+                  <h3 class="fs-2">NT$ 900</h3>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="checkout-img">
+                  <img src="https://bit.ly/2zKOP7w" alt="草莓麥片" />
+                </div>
+                <div class="pt-0 d-flex flex-column justify-content-center">
+                  <h3 class="fs-1 fw-light">焦糖馬卡龍(2)</h3>
+                  <h3 class="fs-2">NT$ 900</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

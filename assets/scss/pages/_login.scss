@@ -1,0 +1,138 @@
+p {
+  margin: 0;
+}
+
+//container總寬780px
+.container-780 {
+  max-width: 1024px;
+  padding-left: 122px;
+  padding-right: 122px;
+  @media screen and (max-width: 972px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.py-16 {
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+  border-radius: 0;
+}
+.p-16-20 {
+  padding: 16px 20px;
+}
+.py40-30 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media screen and (max-width: 376px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.w-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.checkbox-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.section-login {
+  .login {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .bg-primary {
+      > div + div {
+        padding-top: 30px;
+      }
+      div {
+        p {
+          padding-bottom: 25px;
+        }
+        div input {
+          width: 266px;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+      .bg-primary div {
+        div input {
+          width: 251.5px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 376px) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.login-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 36px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    li + li {
+      margin-top: 16px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+    }
+  }
+}
+
+.login-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  ul {
+    display: flex;
+    li + li {
+      margin-left: 1px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      width: 105px;
+      a {
+        img {
+          padding: 18px 15px;
+        }
+      }
+    }
+  }
+}

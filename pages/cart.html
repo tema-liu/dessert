@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>購物車</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="cart-sec">
+      <div class="row justify-content-center">
+        <div class="col col-md-8">
+          <div class="container container768-px0">
+            <h2 class="fs-3 bg-success d-flex justify-content-center">
+              您的購物車
+            </h2>
+          </div>
+          <div class="container">
+            <div class="cart-card">
+              <div>
+                <div class="cart-card-img">
+                  <img src="https://bit.ly/2QvsT63" alt="草莓麥片" />
+                </div>
+                <div>
+                  <div class="cart-text">
+                    <h3 class="fs-2 fw-light">焦糖瑪卡龍</h3>
+                    <p class="fw-light">NT$ 450</p>
+                  </div>
+                  <div class="cart-card-number">
+                    <div>-</div>
+                    <div>2</div>
+                    <div>+</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="fs-2">NT$ 900</h3>
+              <img
+                class="w-24 d-none d-md-flex align-items-center"
+                src="/assets/images/delete_outline_24dp_3F5D45.png"
+                alt="delete"
+              />
+            </div>
+            <div class="cart-card">
+              <div>
+                <div class="cart-card-img">
+                  <img src="https://bit.ly/2zBDAxX" alt="草莓蛋糕" />
+                </div>
+                <div>
+                  <div class="cart-text">
+                    <h3 class="fs-2 fw-light">焦糖瑪卡龍</h3>
+                    <p class="fw-light">NT$ 450</p>
+                  </div>
+                  <div class="cart-card-number">
+                    <div>-</div>
+                    <div>2</div>
+                    <div>+</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="fs-2">NT$ 900</h3>
+              <img
+                class="w-24 d-none d-md-flex align-items-center"
+                src="/assets/images/delete_outline_24dp_3F5D45.png"
+                alt="delete"
+              />
+            </div>
+            <div class="cart-card">
+              <div>
+                <div class="cart-card-img">
+                  <img src="https://bit.ly/2zKOP7w" alt="草莓麥片" />
+                </div>
+                <div>
+                  <div class="cart-text">
+                    <h3 class="fs-2 fw-light">焦糖瑪卡龍</h3>
+                    <p class="fw-light">NT$ 450</p>
+                  </div>
+                  <div class="cart-card-number">
+                    <div>-</div>
+                    <div>2</div>
+                    <div>+</div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="fs-2">NT$ 900</h3>
+              <img
+                class="w-24 d-none d-md-flex align-items-center"
+                src="/assets/images/delete_outline_24dp_3F5D45.png"
+                alt="delete"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 flex-wrap">
+          <div class="cart-total d-flex flex-column align-items-center">
+            <div class="w-100 d-flex justify-content-center">
+              <h2 class="fs-3">訂單摘要</h2>
+            </div>
+            <div class="fw-light w-100 d-flex justify-content-between">
+              <p>小計</p>
+              <p>NT$ 2,700</p>
+            </div>
+            <div class="fw-light w-100 d-flex justify-content-between">
+              <p>運費</p>
+              <p>NT$ 300</p>
+            </div>
+            <div class="fs-2 w-100 d-flex justify-content-between">
+              <p>總計</p>
+              <p>NT$ 3,000</p>
+            </div>
+          </div>
+          <button class="pramary-btn fs-3 fw-bold">
+            <a href="/dessert/checkout1.html">結帳</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

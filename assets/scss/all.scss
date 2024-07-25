@@ -1,3 +1,29 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+@import "./utils/variables";
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional Bootstrap components here
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+
+// before
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./utils/reset";
+
 @import "./pages/index";
+@import "./pages/product";
+@import "./pages/login";
+@import "./pages/cart";
+@import "./pages/checkout1";
+
 @import "./layout/header";
+@import "./layout/footer";
